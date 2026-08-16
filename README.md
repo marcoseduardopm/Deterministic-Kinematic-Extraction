@@ -1,7 +1,7 @@
 
 ---
 
-# Synthetic Video Dataset for Deterministic Kinematic Extraction
+# Deterministic Kinematic Extraction - Synthetic Video Dataset
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Paper](https://img.shields.io/badge/Paper-IEEE%20Access-blue)](https://ieeeaccess.ieee.org/) (under revision) 
@@ -20,6 +20,21 @@ This repository contains the open-source synthetic video dataset generated for t
 This dataset was designed to overcome physical IMU data scarcity for Human Activity Recognition (HAR) on edge devices. It provides synthetically generated human kinematic video sequences produced by state-of-the-art text-to-video diffusion models in a zero-shot regime.
 
 Unlike probabilistic distillation methods, this dataset is intended for **deterministic mathematical extraction**. The videos serve as the visual foundation for a rigid signal processing pipeline: 3D surface meshes are extracted via WHAM and SLAM, smoothed via optimal Savitzky-Golay filtering, and mathematically differentiated to derive physical 3-axis inertial (acceleration) tensors.
+
+---
+
+## Related Dataset
+
+A sibling corpus by the same authors accompanies the companion study, which attacks the same
+data-scarcity problem through **cross-modal knowledge distillation** rather than deterministic
+extraction:
+
+> **Synthetic IMU Data Generation via Diffusion-Based Video Models**
+> https://github.com/marcoseduardopm/Synthetic-IMU-Data-Generation-Diffusion-Based-Video-Models
+
+It shares this taxonomy, prompt structure and naming convention, and was generated with the
+same pipeline under different seeds — so the two corpora are directly poolable, and the seed
+in each filename identifies which study a clip originated from.
 
 ---
 
@@ -203,21 +218,6 @@ This dataset is not meant to be processed by a Vision Encoder. Instead, it is pr
 4. **Proportional Skeletal Scaling:** The arbitrary monocular scale is anchored to a fixed pelvis–ankle segment length, estimated as a high percentile over all frames of the clip.
 5. **Digital Signal Processing (DSP):** Spatial coordinates are upsampled via cubic splines to the 100 Hz working rate of the physical corpora and smoothed using an optimized Savitzky-Golay filter ($w=7$, $p=3$), suppressing generative pixel-jitter while preserving high-frequency biomechanical impacts.
 6. **Kinematic Differentiation:** The smoothed spatial trajectories are numerically differentiated twice over time, mapped into the wearable sensor frame with gravity applied on the vertical axis, and emitted as **3-axis acceleration tensors** in m/s².
-
----
-
-## Related Dataset
-
-A sibling corpus by the same authors accompanies the companion study, which attacks the same
-data-scarcity problem through **cross-modal knowledge distillation** rather than deterministic
-extraction:
-
-> **Synthetic IMU Data Generation via Diffusion-Based Video Models**
-> https://github.com/marcoseduardopm/Synthetic-IMU-Data-Generation-Diffusion-Based-Video-Models
-
-It shares this taxonomy, prompt structure and naming convention, and was generated with the
-same pipeline under different seeds — so the two corpora are directly poolable, and the seed
-in each filename identifies which study a clip originated from.
 
 ---
 
