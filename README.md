@@ -11,7 +11,7 @@ This repository contains the open-source synthetic video dataset generated for t
 
 > **"Deterministic Kinematic Extraction from Diffusion Models for Human Activity Recognition"**
 > Marcos Eduardo Pivaro Monteiro, Jamil de Araujo Farhat, João Alberto Fabro, Bogdan Tomoyuki Nassu
-> (under revision) *IEEE Access*, 2026 — Federal University of Technology – Paraná (UTFPR), Brazil
+> *IEEE Access*, 2026 — Federal University of Technology – Paraná (UTFPR), Brazil
 
 ---
 
@@ -236,13 +236,16 @@ If you use this dataset or the extraction methodology in your research, please c
 (under revision)
 
 ```bibtex
-@article{monteiro2026deterministic,
-  title   = {Deterministic Kinematic Extraction from Diffusion Models for Human Activity Recognition},
-  author  = {Monteiro, Marcos Eduardo Pivaro and Farhat, Jamil de Araujo and Fabro, Jo\~ao Alberto and Nassu, Bogdan Tomoyuki},
-  journal = {IEEE Access},
-  year    = {2026},
-  institution = {Federal University of Technology -- Paran\'a (UTFPR), Brazil}
-}
+@ARTICLE{11741090,
+  author={Monteiro, Marcos Eduardo Pivaro and Farhat, Jamil De Araujo and Fabro, João Alberto and Nassu, Bogdan Tomoyuki},
+  journal={IEEE Access}, 
+  title={Deterministic Kinematic Extraction from Diffusion Models for Human Activity Recognition}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Modeling;Videos;Architecture;Computer architecture;Convolutional neural networks;Human activity recognition;Tensors;Bidirectional long short term memory;Visualization;Image sensors;Diffusion models;edge computing;human activity recognition (HAR);inertial measurement unit (IMU);kinematic extraction;synthetic data augmentation;wearable sensors},
+  doi={10.1109/ACCESS.2026.3745220}}
 ```
 
 ---
