@@ -29,7 +29,7 @@ A sibling corpus by the same authors accompanies the companion study, which atta
 data-scarcity problem through **cross-modal knowledge distillation** rather than deterministic
 extraction:
 
-> **Synthetic IMU Data Generation via Diffusion-Based Video Models**
+> **Cross-Modal Knowledge Distillation from Synthetic Video for IMU-Based HAR**
 > https://github.com/marcoseduardopm/Synthetic-IMU-Data-Generation-Diffusion-Based-Video-Models
 
 It shares this taxonomy, prompt structure and naming convention, and was generated with the
