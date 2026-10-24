@@ -30,6 +30,7 @@ data-scarcity problem through **cross-modal knowledge distillation** rather than
 extraction:
 
 > **Cross-Modal Knowledge Distillation from Synthetic Video for IMU-Based HAR**
+> 
 > https://github.com/marcoseduardopm/Synthetic-IMU-Data-Generation-Diffusion-Based-Video-Models
 
 It shares this taxonomy, prompt structure and naming convention, and was generated with the
